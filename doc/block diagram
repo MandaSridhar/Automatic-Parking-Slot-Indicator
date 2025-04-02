@@ -1,0 +1,34 @@
+       +------------------+
+       |   Entrance IR    | <--- Detects incoming vehicle
+       |    Sensor        |
+       +------------------+
+                |
+                v
+       +------------------+
+       |   Microcontroller| <--- AT89S52 processes data
+       |     (AT89S52)    |
+       +------------------+
+                |
+  +-------------+-------------+
+  |             |             |
+  v             v             v
++---------+  +---------+  +---------+
+| IR Slot |  | IR Slot |  | IR Slot | <--- Sensors detect occupied/vacant slots
+| Sensor 1|  | Sensor 2|  | Sensor 3|
++---------+  +---------+  +---------+
+  |             |             |
+  v             v             v
++------------------------------------+
+|        LCD Display (16x2)         | <--- Shows available slots
++------------------------------------+
+  |
+  v
++------------------+
+|   Motor Driver  | <--- Controls gate
+|    (L293D)      |
++------------------+
+  |
+  v
++------------------+
+|  Entrance Gate  | <--- Opens/closes based on parking availability
++------------------+
