@@ -36,5 +36,3 @@ The **Automatic Parking Slot Indicator** is an embedded system designed to strea
 1. Install **Keil uVision** IDE.
 2. Compile the source code using Keil.
 3. Flash the code to the microcontroller.
-
-## Folder Structure 📂
